@@ -1,0 +1,924 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
+
+/* Custom CSS */
+
+html,
+body {
+  font-family: "Poppins" !important;
+  /* scroll-behavior: smooth !important; */
+}
+
+p,
+ul,
+dt,
+dl {
+  line-height: 1.5 !important;
+}
+
+/* bg */
+.bg-primary-brand {
+  background: #0076e4 !important;
+}
+
+.bg-affinity-gradient {
+  background: rgb(224, 233, 243);
+  background: linear-gradient(
+    180deg,
+    rgba(224, 233, 243, 1) 40%,
+    rgba(220, 230, 241, 0.9668242296918768) 74%,
+    rgba(249, 250, 252, 0.9164040616246498) 100%
+  );
+}
+
+.bg-affinity-img {
+  /* background: url("~assets/img/affinity/column--bg.png") !important; */
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+.financial-bg {
+  /* background: url("~assets/img/affinity/financial-bg.png") !important; */
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+/* text */
+.text-primary-color {
+  color: #062d97 !important;
+}
+
+.text-brand-secondary {
+  color: #ff8e00;
+}
+
+.text-affinity-blue {
+  color: #0076e4 !important;
+}
+
+.text-orange-affinity {
+  color: #fc760d !important;
+}
+
+.text-gray-secondary {
+  color: #8f8f8f !important;
+}
+
+.text-footer-title {
+  color: #94c3f8 !important;
+}
+
+.text-gray-new {
+  color: #686767 !important;
+}
+
+.text-inherit {
+  color: inherit;
+}
+
+.btn-transform {
+  font-size: 16px;
+  text-transform: unset !important;
+}
+
+.bg-primary-blue:hover {
+  background: #0076e4 !important;
+}
+
+.bg-primary-blue:hover h6,
+.bg-primary-blue:hover h5 {
+  color: #fff !important;
+}
+
+.bg-primary-blue:hover p {
+  color: #fff !important;
+}
+
+.bg-primary-blue:hover .card-footer,
+.bg-primary-blue:hover .card-body {
+  background-color: #0076e4 !important;
+  border-top: 0.0625rem solid #fff !important;
+}
+
+.bg-primary-blue:hover a {
+  color: #fff !important;
+}
+
+.text-space {
+  white-space: nowrap;
+}
+
+.gutter-footer {
+  padding-left: 4rem;
+}
+
+/* Header */
+.header-global,
+footer {
+  font-family: "Poppins" !important;
+}
+
+.affinity-logo {
+  display: block;
+  height: 50px !important;
+}
+
+.affinity-logo-color {
+  display: none;
+  height: 50px;
+}
+
+.font-weight-custom {
+  font-weight: 500 !important;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+/* footer */
+.social-title {
+  font-family: "Poppins" !important;
+  font-size: 24px !important;
+}
+
+.social-sub {
+  font-family: "Poppins" !important;
+  font-size: 20px !important;
+}
+
+.custom-line-height {
+  line-height: 1.5 !important;
+}
+
+.head-fix .navbar-nav .nav-link {
+  font-family: "Poppins" !important;
+  font-size: 13px !important;
+  color: rgba(0, 32, 96) !important;
+  font-weight: 500;
+}
+
+.navbar-affinity .navbar-nav {
+  font-family: "Poppins" !important;
+}
+
+.navbar-nav .dropdown-menu:before {
+  background: #fff0 !important;
+}
+
+.dropdown-menu-custom {
+  min-width: 1050px;
+  border-radius: 0.3rem;
+}
+
+.heading {
+  font-size: 13px !important;
+  font-weight: 500;
+}
+
+.heading a {
+  color: #062d97 !important;
+}
+
+.link-subText {
+  font-size: 12px !important;
+  color: #868e96;
+}
+
+.dropdown-menu-affinity {
+  font-family: "Poppins" !important;
+  top: 100% !important;
+  left: -113px !important;
+  /* background: url("../img/affinity/About-us.png"); */
+  background-position: right center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #0076e4 !important;
+}
+
+.dropdown-menu-affinity .dropdown-menu-inner {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+.dropdown-menu-affinity .dropdown-menu {
+  padding: 0 !important;
+}
+
+.dropdown-menu-affinity .dropdown-item {
+  padding: 0 !important;
+}
+
+.dropdown-menu-affinity .dropdown-item:active {
+  text-decoration: none !important;
+  background-color: #f6f9fc00 !important;
+}
+
+.dropdown-menu-affinity .dropdown-item:hover {
+  text-decoration: none !important;
+  background-color: #f6f9fc00 !important;
+}
+
+.dropdown-menu-affinity .heading {
+  text-transform: none !important;
+}
+
+/* Forms */
+.dropdown-menu-forms {
+  font-family: "Poppins" !important;
+  top: 100% !important;
+  left: -427px !important;
+  /* background-image: url("../img/affinity/forms.png"); */
+  background-position: top center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #0076e4 !important;
+}
+
+.dropdown-menu-forms .dropdown-menu-inner {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+.dropdown-menu-forms .heading {
+  text-transform: none !important;
+}
+
+.form-pb-lg {
+  padding-bottom: 13rem !important;
+}
+
+/* Solutions */
+.dropdown-menu-solutions {
+  font-family: "Poppins" !important;
+  top: 100% !important;
+  left: -490px !important;
+  /* background-image: url("../img/affinity/solutions.png"); */
+  background-position: top center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #0076e4 !important;
+}
+
+.dropdown-menu-solutions .dropdown-menu-inner {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+.dropdown-menu-solutions .heading {
+  text-transform: none !important;
+}
+
+/* Insights */
+.dropdown-menu-insights {
+  font-family: "Poppins" !important;
+  top: 100% !important;
+  left: -220px !important;
+  /* background-image: url("../img/affinity/solutions.png"); */
+  background-position: top center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #0076e4 !important;
+}
+
+.dropdown-menu-insights .dropdown-menu-inner {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+.dropdown-menu-insights .heading {
+  text-transform: none !important;
+}
+
+/* Forms new */
+.dropdown-menu-formNew {
+  font-family: "Poppins" !important;
+  top: 100% !important;
+  left: -348px !important;
+  /* background-image: url("../img/affinity/forms.png"); */
+  background-position: top center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #0076e4 !important;
+}
+
+.dropdown-menu-formNew .dropdown-menu-inner {
+  margin-top: 2rem !important;
+  margin-bottom: 4rem !important;
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+.dropdown-menu-formNew .heading {
+  text-transform: none !important;
+}
+
+/* Services */
+.dropdown-menu-services {
+  font-family: "Poppins" !important;
+  top: 100% !important;
+  left: -556px !important;
+  /* background-image: url("../img/affinity/Funds.png"); */
+  background-position: top center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #0076e4 !important;
+}
+
+.dropdown-menu-services .dropdown-menu-inner {
+  margin-top: 2rem !important;
+  margin-bottom: 4rem !important;
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+.dropdown-menu-formNew .heading {
+  text-transform: none !important;
+}
+
+.insight-pb-lg {
+  padding-bottom: 10rem;
+}
+
+/* Funds */
+.dropdown-menu-funds {
+  font-family: "Poppins" !important;
+  top: 100% !important;
+  left: -434px !important;
+  /* background-image: url("../img/affinity/Funds.png"); */
+  background-position: right center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #0076e4 !important;
+}
+
+.dropdown-menu-funds .dropdown-menu-inner {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+.dropdown-menu-funds .heading {
+  text-transform: none !important;
+}
+
+.shadow-custom {
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%) !important;
+}
+
+.forms--card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+}
+
+.funds-pb-lg {
+  padding-bottom: 1rem !important;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 0 !important;
+}
+
+.btn-brand-secondary {
+  font-family: "Poppins" !important;
+  color: #fff !important;
+  background-color: #ff8e00 !important;
+  border-color: #ff8e00 !important;
+}
+
+.btn-brand-secondary:hover {
+  color: #fff !important;
+  background-color: #ee8e18 !important;
+  border-color: #ee8e18 !important;
+}
+
+/* Footer */
+.blue-bg {
+  height: 100%;
+  background: #062d97 !important;
+  /* background: linear-gradient(
+    90deg,
+    rgba(43, 111, 215, 1) 0%,
+    rgba(0, 105, 229, 1) 34%,
+    rgba(9, 95, 222, 1) 80%
+  ); */
+  padding: 20px 0;
+}
+
+/* .company--details {
+  width: 100vw;
+  display: block;
+} */
+
+.company--details-title {
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+}
+
+.company--details-licensed {
+  text-align: center;
+  color: #94c3f8;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.footer--text a {
+  color: white !important;
+  font-size: 12px;
+}
+
+.footer--text h6 {
+  font-weight: 500 !important;
+}
+
+.footer--text ul {
+  list-style-type: none !important;
+}
+
+.footer--text ul li::before {
+  /* content: "\2022";
+  color: white; */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+}
+
+.footer--text a:hover {
+  color: #fd9d24 !important;
+  transition: 0.3s ease color;
+}
+
+.white-bg {
+  height: 100%;
+  background-color: white;
+  display: inline-block;
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo--copy-rights {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.logo--copy-rights .affinity-logo {
+  /* width: 120px; */
+  margin-right: 20px;
+}
+
+.logo--copy-rights p {
+  color: rgba(0, 32, 96);
+  font-size: 0.8em;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+}
+
+.link-partners {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.link-partners a,
+.link-partners p {
+  color: rgba(0, 32, 96);
+  margin-right: 20px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.link-partners a:hover,
+.link-partners p:hover {
+  color: #014ab1;
+  transition: 0.3s ease color;
+}
+
+.link-partners img {
+  height: 25px;
+  margin-left: 10px;
+}
+
+.aws-text {
+  margin-left: 1rem !important;
+  margin-top: 1rem !important;
+  color: rgba(0, 32, 96);
+  font-size: 0.8em !important;
+}
+
+/* Loader */
+.loader-container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  text-align: center;
+  line-height: 1.6rem;
+}
+.loader-container .loader-container-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1.5rem;
+}
+.loader-container small {
+  margin: 10px 0 0;
+  display: block;
+  color: #868e96;
+  font-weight: normal;
+}
+.loader-container h3 {
+  text-align: center;
+  display: block;
+}
+
+.heading ul {
+  list-style: none !important;
+}
+
+/* terms */
+.terms-wrapper {
+  max-height: 500px;
+  overflow: auto;
+  padding: 0 10px;
+  margin: 0 -20px 0 0;
+}
+
+.terms-wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  background-color: #f5f5f5 !important;
+  border-radius: 10px !important;
+}
+
+.terms-wrapper::-webkit-scrollbar {
+  width: 6px !important;
+  height: 5px !important;
+  background-color: #f5f5f5 !important;
+}
+
+.terms-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background-color: #767676 !important;
+}
+
+.terms-wrapper {
+  scroll-behavior: smooth;
+}
+
+.terms-header {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  margin: 30px 0 0 0;
+}
+
+.terms-title {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500;
+  font-size: 20x;
+  margin: 30px 0 0 0;
+}
+
+.terms-description {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.terms-list {
+  padding-left: 30px;
+}
+
+.terms-list li {
+  position: relative;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #ee8e18;
+}
+
+.navlink-header::before {
+  width: 0%;
+  bottom: 7px;
+}
+
+.navlink-header:hover::before {
+  width: 75%;
+}
+
+.navbar-main .navlink-header {
+  font-size: 12px !important;
+}
+
+.sec-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* medium size laptop */
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .head-trans .navbar-nav .nav-link {
+    font-family: "Poppins" !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    font-weight: 500;
+  }
+
+  .head-fix .navbar-nav .nav-link {
+    font-family: "Poppins" !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    font-weight: 500;
+  }
+
+  .gutter-footer {
+    padding-left: 15px !important;
+  }
+}
+
+@media (max-width: 740px) {
+  .fund-headSM {
+    margin-top: -1.2rem !important;
+    padding-left: 1rem !important;
+  }
+
+  /* .left-smFunds {
+    padding-left: 1rem !important;
+  } */
+
+  .headerLeft-sm {
+    margin-left: 1rem !important;
+  }
+
+  .heading-ul {
+    padding-left: 1.5rem !important;
+  }
+
+  .heading,
+  .funds--heading {
+    font-size: 13px !important;
+  }
+
+  .heading li::marker {
+    font-size: 150%;
+    content: "\2022" !important;
+    color: #062d97 !important;
+    width: 1em !important;
+    margin-left: -1.2em !important;
+    margin-right: 1rem !important;
+    margin-top: -1em !important;
+    font-weight: 600;
+  }
+
+  .hashlink--left {
+    padding-left: 2rem !important;
+  }
+
+  .dropdown-menu-funds ul li a,
+  .dropdown-menu-insights ul li a {
+    margin-left: 0.5em !important;
+  }
+
+  .started-left {
+    margin-left: 2rem !important;
+  }
+
+  .navbar-collapse {
+    width: calc(100% - 0rem) !important;
+    height: 650px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .formHead-bottom {
+    margin-bottom: 1rem !important;
+  }
+
+  .navbar-collapse .navbar-toggler span {
+    background: #fff !important;
+  }
+
+  .navbar-collapse .navbar-collapse-header {
+    border-bottom: 1px solid #bab8b8 !important;
+  }
+
+  .navbar-collapse.collapsing,
+  .navbar-collapse.show {
+    background: #0076e4 !important;
+  }
+
+  .head-trans .navbar-nav .nav-link {
+    font-family: "Poppins" !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    font-weight: 500;
+  }
+
+  .head-fix .navbar-nav .nav-link {
+    font-family: "Poppins" !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    font-weight: 500;
+  }
+
+  .navbar-nav .nav-link {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .navbar-nav a:hover,
+  .head-fix .nav-link:hover,
+  .head-trans .nav-link:hover {
+    color: #ff8e00 !important;
+  }
+
+  .arrow-up {
+    transition: all 2 linear !important;
+  }
+
+  .arrow-up.rotate {
+    transform: rotate(180deg) !important;
+  }
+
+  .arrow-up.rotate-down {
+    transform: rotate(0deg) !important;
+  }
+
+  .btn-start-sm {
+    font-family: "Poppins";
+    font-size: 12px;
+    padding: 5px 5px;
+    text-transform: unset !important;
+  }
+
+  .footer--policy {
+    margin-right: 0 !important;
+  }
+
+  .footer--terms {
+    margin-right: 0 !important;
+    margin-left: 30px !important;
+  }
+
+  .sec-sm {
+    width: 30px !important;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  .link-partners {
+    display: block;
+    text-align: right;
+  }
+
+  .link-partners .link {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .white-bg {
+    display: block;
+  }
+
+  .logo--copy-rights {
+    text-align: center;
+    display: block;
+  }
+
+  .link-partners {
+    margin-top: 15px;
+    padding-bottom: 20px !important;
+    display: block;
+    text-align: center;
+  }
+
+  .link-partners .link {
+    margin-bottom: 20px;
+  }
+
+  .link-partners img {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .nav-link::before {
+    height: 0px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .affinity-logo {
+    height: 40px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse .nav-link {
+    color: #fff !important;
+    font-family: "Poppins" !important;
+    font-size: 15px !important;
+    font-weight: 500;
+  }
+
+  .pad--sm {
+    padding-top: 1rem !important;
+    padding-left: 1rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .dropdown-menu-affinity,
+  .dropdown-menu-insights,
+  .dropdown-menu-funds,
+  .dropdown-menu-solutions,
+  .dropdown-menu-services,
+  .dropdown-menu-formNew {
+    background: rgb(224, 233, 243);
+    background: linear-gradient(
+      180deg,
+      rgba(224, 233, 243, 1) 20%,
+      rgba(220, 230, 241, 0.9668242296918768) 44%,
+      rgba(249, 250, 252, 0.9164040616246498) 80%
+    ) !important;
+  }
+
+  .dropdown-menu-affinity .dropdown-menu-inner,
+  .dropdown-menu-insights .dropdown-menu-inner,
+  .dropdown-menu-funds .dropdown-menu-inner,
+  .dropdown-menu-solutions .dropdown-menu-inner,
+  .dropdown-menu-services .dropdown-menu-inner,
+  .dropdown-menu-formNew .dropdown-menu-inner {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .dropdown-menu-affinity .heading {
+    font-size: 14px !important;
+  }
+
+  .gutter-footer {
+    padding-left: 15px !important;
+  }
+}

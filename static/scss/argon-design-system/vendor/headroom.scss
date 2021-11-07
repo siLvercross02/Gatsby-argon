@@ -1,0 +1,44 @@
+.headroom {
+  will-change: transform;
+  background-color: inherit;
+  @include transition($transition-base);
+}
+.headroom--pinned {
+  @extend .position-fixed;
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  @extend .position-fixed;
+  /*transform: translateY(-100%);*/
+  transform: translateY(0%);
+}
+
+.headroom--top .navbar--custom .nav-link {
+  color: $affinity !important;
+  font-weight: 500;
+}
+
+.headroom--not-top {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: theme-color("white") !important;
+  box-shadow: 0 1px 10px rgba(130, 130, 134, 0.1);
+}
+
+.headroom--not-top a {
+  color: $affinity !important;
+  font-weight: 500;
+}
+
+.headroom--not-top .navbar-brand .affinity-logo-color {
+  display: block !important;
+  height: 40px !important;
+}
+
+.headroom--not-top .navbar-toggler-icon {
+  background-image: $navbar-light-toggler-icon-bg !important;
+}
+
+.headroom--not-top .navbar-brand .affinity-logo {
+  display: none !important;
+}
