@@ -1,11 +1,13 @@
 import React from "react"
-import Header from "../components/Layout/Header"
+import Layout from "../components/Layout/Layout"
+import Banner from "../components/pages/home/Banner"
+import Section2 from "../components/pages/home/Section2"
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <h1>Hello Next.js</h1>
-    </div>
+    <Layout>
+      <Banner />
+      <Section2 />
+    </Layout>
   )
 }

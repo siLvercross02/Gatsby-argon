@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import cx from 'classnames';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { Link } from "gatsby";
 // JavaScript plugin that hides or shows a component based on your scroll
 // import Headroom from "headroom.js";
@@ -8,10 +7,10 @@ import { Link } from "gatsby";
 import {
     Button,
     UncontrolledCollapse,
-    DropdownMenu,
+    // DropdownMenu,
     DropdownToggle,
     UncontrolledDropdown,
-    Media,
+    // Media,
     NavbarBrand,
     Navbar,
     NavItem,
@@ -28,20 +27,20 @@ import LogoImgSM from '../../../static/img/brand/argon-react.png';
 
 // Icons
 import {
-    MdGroupWork,
-    MdAccountBalance,
-    MdThumbUp,
-    MdPeople,
-    MdAccountBox,
-    MdVisibility,
-    MdQuestionAnswer,
-    MdFileDownload,
-    MdLocationCity,
-    MdPieChart,
-    MdTrendingUp,
-    MdAssessment,
-    MdAccessibility,
-    MdBook,
+    // MdGroupWork,
+    // MdAccountBalance,
+    // MdThumbUp,
+    // MdPeople,
+    // MdAccountBox,
+    // MdVisibility,
+    // MdQuestionAnswer,
+    // MdFileDownload,
+    // MdLocationCity,
+    // MdPieChart,
+    // MdTrendingUp,
+    // MdAssessment,
+    // MdAccessibility,
+    // MdBook,
     MdPayment
 } from 'react-icons/md';
 
@@ -50,14 +49,7 @@ export default function Header() {
     const [rotateArrow, setRotateArrow] = useState(false);
     const [startedArrow, setStartedArrow] = useState(false);
     const [fundsArrow, setFundsArrow] = useState(false);
-    const [createAccount, setCreateAccount] = useState(false);
-    // const [collapseOpen, setCollapseOpen] = useState(false);
-
-    // useEffect(() => {
-    //     let headroom = new Headroom(document.getElementById("navbar-main"));
-    //     // initialise
-    //     headroom.init();
-    // }, []);
+    // const [createAccount, setCreateAccount] = useState(false);
 
     const rotate = () => {
         setRotateArrow(!rotateArrow);
@@ -97,7 +89,7 @@ export default function Header() {
                     fixed="top"
                     id="navbar-main"
                 >
-                    <Container fluid={true}>
+                    <Container>
                         <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                             <img
                                 alt="..."
@@ -136,7 +128,7 @@ export default function Header() {
                                     </Col>
                                 </Row>
                             </div>
-                            <Nav className="navbar-nav-hover align-items-lg-center" navbar>
+                            <Nav className="navbar-nav-hover align-items-lg-center ml-lg-auto" navbar>
                                 <NavItem>
                                     <NavLink href="/home" className="navlink-header">
                                         <i className="ni ni-app d-lg-none mr-3" />
@@ -157,7 +149,7 @@ export default function Header() {
                                         <i className={cx(`ni ni-bold-down d-lg-none mr-3 float-right arrow-up ${rotateArrow ? 'rotate' : 'rotate-down'}`)} />
                                         {/* </HashLink> */}
                                     </DropdownToggle>
-                                    <DropdownMenu className="dropdown-menu-affinity dropdown-menu-custom">
+                                    {/* <DropdownMenu className="dropdown-menu-affinity dropdown-menu-custom">
                                         <div className="dropdown-menu-inner">
                                             <AnchorLink to="/about/#whyUS" style={{ color: 'inherit' }}>
                                                 <Media
@@ -216,11 +208,11 @@ export default function Header() {
                                                 </Media>
                                             </AnchorLink>
                                         </div>
-                                    </DropdownMenu>
+                                    </DropdownMenu> */}
                                 </UncontrolledDropdown>
 
                                 {/* Insights */}
-                                <UncontrolledDropdown nav inNavbar>
+                                {/* <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav onClick={started} className="navlink-header">
                                         <i className="ni ni-money-coins d-lg-none mr-3" />
                                         <span className="nav-link-inner--text">Get Started</span>
@@ -288,100 +280,12 @@ export default function Header() {
                                                     </Media>
                                                 </Media>
                                             </AnchorLink>
-                                            {/* <Media
-                                                className="d-flex align-items-center"
-                                                href="#"
-                                                target="_blank"
-                                            >
-                                                <div className="icon icon-shape text-primary-color">
-                                                    <MdHighlight />
-                                                </div>
-                                                <Media body className="ml-3">
-                                                    <h6 className="heading text-primary mb-md-1">
-                                                        Highligts and Events
-                                                    </h6>
-                                                </Media>
-                                            </Media> */}
                                         </div>
                                     </DropdownMenu>
-                                </UncontrolledDropdown>
-
-                                {/* Forms */}
-                                <UncontrolledDropdown nav inNavbar>
-                                    <DropdownToggle nav onClick={rotate} className="navlink-header">
-                                        {/* <HashLink
-                                            to="/about"
-                                            style={{ color: 'inherit'}}
-                                        > */}
-                                        <i className="ni ni-folder-17 d-lg-none mr-3" />
-                                        <span className="nav-link-inner--text">Forms</span>
-                                        <i className={cx(`ni ni-bold-down d-lg-none mr-3 float-right arrow-up ${rotateArrow ? 'rotate' : 'rotate-down'}`)} />
-                                        {/* </HashLink> */}
-                                    </DropdownToggle>
-                                    <DropdownMenu className="dropdown-menu-formNew dropdown-menu-custom">
-                                        <div className="dropdown-menu-inner">
-                                            <AnchorLink to="/individual-forms" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdAccountBox />
-                                                    </div>
-                                                    <Media body className="ml-3 headerLeft-sm">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom">
-                                                            Individual
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </AnchorLink>
-                                            <AnchorLink to="/corporate-forms" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdLocationCity />
-                                                    </div>
-                                                    <Media body className="ml-3 headerLeft-sm">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom">
-                                                        Institutional/Corporate
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </AnchorLink>
-                                            <AnchorLink to="/ada-forms" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdFileDownload />
-                                                    </div>
-                                                    <Media body className="ml-3">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom">
-                                                            Automatic Debit Arrangement (ADA)
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </AnchorLink>
-                                            <a href="#" target="_blank" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdPayment />
-                                                    </div>
-                                                    <Media body className="ml-3">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom">
-                                                            Authorization to deduct from Payroll
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </a>
-                                        </div>
-                                    </DropdownMenu>
-                                </UncontrolledDropdown>
+                                </UncontrolledDropdown> */}
 
                                 {/* Funds */}
-                                <UncontrolledDropdown nav inNavbar>
+                                {/* <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav onClick={funds} className="navlink-header">
                                         <i className="ni ni-chart-bar-32 d-lg-none mr-3" />
                                         <span className="nav-link-inner--text">Investment</span>
@@ -396,26 +300,9 @@ export default function Header() {
                                             </Row>
                                             <Row>
                                                 <Col md={6}>
-                                                    {/* <Media
-                                                        className="d-flex align-items-center mb-0"
-                                                        href="#"
-                                                        target="_blank"
-                                                    >
-                                                        <div className="icon icon-shape text-primary-color">
-                                                            <MdList />
-                                                        </div>
-                                                        <Media body className="ml-3">
-                                                            <h6 className="heading text-primary mb-md-1">
-                                                                List of Funds
-                                                            </h6>
-                                                        </Media>
-                                                    </Media> */}
                                                     <Media
                                                         className="d-flex align-items-center"
                                                     >
-                                                        {/* <div className="icon icon-shape text-primary-color">
-                                                            <MdAssessment />
-                                                        </div> */}
                                                         <Media body className="ml-3 headerLeft-sm">
                                                             <h6 className="heading text-primary-color mb-md-1 font-weight-custom">
                                                                 I. Mutual Funds
@@ -459,43 +346,11 @@ export default function Header() {
                                                             </ul>
                                                         </Media>
                                                     </Media>
-                                                    {/* <Media
-                                                        className="d-flex align-items-center mb-0"
-                                                    >
-                                                        <Media body className="ml-3">
-                                                            <h6 className="heading text-primary-color mb-md-1">
-                                                                II. UITF <span className="text-brand-secondary">(Coming Soon)</span>
-                                                            </h6>
-                                                            <ul className="heading mt-2">
-                                                                <li className="mb-3"><Link to="#">Investor Type</Link></li>
-                                                                <li className="mb-3"><Link to="#">Fund Asset Class </Link></li>
-                                                                <li className="mb-3"><Link to="#">Currency </Link></li>
-                                                                <li className="mb-3"><Link to="#">Fund Manager</Link></li>
-                                                            </ul>
-                                                        </Media>
-                                                    </Media> */}
-                                                    {/* <Media
-                                                        className="d-flex align-items-center"
-                                                        href="#"
-                                                        target="_blank"
-                                                    >
-                                                        <div className="icon icon-shape text-primary-color">
-                                                            <MdSwapHoriz />
-                                                        </div>
-                                                        <Media body className="ml-3">
-                                                            <h6 className="heading text-primary mb-md-1">
-                                                                How to Fund Switch
-                                                            </h6>
-                                                        </Media>
-                                                    </Media> */}
                                                 </Col>
                                                 <Col md={4}>
                                                     <Media
                                                         className="d-flex align-items-center mb-0"
                                                     >
-                                                        {/* <div className="icon icon-shape text-primary-color">
-                                                            <MdRedeem />
-                                                        </div> */}
                                                         <Media body className="ml-3 headerLeft-sm">
                                                             <h6 className="heading text-primary-color mb-md-1 font-weight-custom">
                                                                 II. Mutual Fund Performance
@@ -507,213 +362,11 @@ export default function Header() {
                                                         </Media>
                                                     </Media>
                                                 </Col>
-                                                {/* <Col md={6}>
-                                                    <Media
-                                                        className="d-flex align-items-center mb-0"
-                                                        href="#"
-                                                        target="_blank"
-                                                    >
-                                                        <div className="icon icon-shape text-primary-color">
-                                                            <MdList />
-                                                        </div>
-                                                        <Media body className="ml-3">
-                                                            <h6 className="heading text-primary mb-md-1">
-                                                                List of Funds
-                                                            </h6>
-                                                        </Media>
-                                                    </Media>
-                                                </Col> */}
                                             </Row>
-                                        </div>
-                                    </DropdownMenu>
-                                </UncontrolledDropdown>
-
-                                {/* Forms */}
-                                {/* <UncontrolledDropdown nav>
-                                    <DropdownToggle nav>
-                                        <i className="ni ni-ui-04 d-lg-none mr-1" />
-                                        <span className="nav-link-inner--text">Forms</span>
-                                    </DropdownToggle>
-                                    <DropdownMenu className="dropdown-menu-forms dropdown-menu-custom">
-                                        <div className="dropdown-menu-inner form-pb-lg">
-                                            <Media
-                                                className="d-flex align-items-center mb-0"
-                                                href="#"
-                                                target="_blank"
-                                            >
-                                                <div className="icon icon-shape text-primary-color">
-                                                    <MdAccountBox />
-                                                </div>
-                                                <Media body className="ml-3">
-                                                    <h6 className="heading text-primary-color mb-md-1">
-                                                        Individual Forms
-                                                    </h6>
-                                                </Media>
-                                            </Media>
-                                            <Media
-                                                className="d-flex align-items-center"
-                                                href="#"
-                                                target="_blank"
-                                            >
-                                                <div className="icon icon-shape text-primary-color">
-                                                    <MdLocationCity />
-                                                </div>
-                                                <Media body className="ml-3">
-                                                    <h6 className="heading text-primary mb-md-1">
-                                                        Corporate Forms
-                                                    </h6>
-                                                </Media>
-                                            </Media>
-                                        </div>
-                                    </DropdownMenu>
-                                </UncontrolledDropdown> */}
-
-                                {/* Services */}
-                                {/* <UncontrolledDropdown nav inNavbar>
-                                    <DropdownToggle nav>
-                                        <i className="ni ni-ui-04 d-lg-none mr-1" />
-                                        <span className="nav-link-inner--text">Services</span>
-                                    </DropdownToggle>
-                                    <DropdownMenu className="dropdown-menu-solutions dropdown-menu-custom">
-                                        <div className="dropdown-menu-inner form-pb-lg">
-                                            <Media
-                                                className="d-flex align-items-center mb-0"
-                                                href="#"
-                                                target="_blank"
-                                            >
-                                                <div className="icon icon-shape text-primary-color">
-                                                    <MdPieChart />
-                                                </div>
-                                                <Media body className="ml-3">
-                                                    <h6 className="heading text-primary-color mb-md-1">
-                                                        Personalized Investing
-                                                    </h6>
-                                                </Media>
-                                            </Media>
-                                            <Media
-                                                className="d-flex align-items-center"
-                                                href="#"
-                                                target="_blank"
-                                            >
-                                                <div className="icon icon-shape text-primary-color">
-                                                    <MdAccessibility />
-                                                </div>
-                                                <Media body className="ml-3">
-                                                    <h6 className="heading text-primary-color mb-md-1">
-                                                        Corporate Retirement
-                                                    </h6>
-                                                </Media>
-                                            </Media>
-                                        </div>
-                                    </DropdownMenu>
-                                </UncontrolledDropdown> */}
-                                {/* Service */}
-                                {/* <UncontrolledDropdown nav inNavbar>
-                                    <DropdownToggle nav onClick={rotate} className="navlink-header">
-                                    
-                                        <i className="ni ni-single-02 d-lg-none mr-3" />
-                                        <span className="nav-link-inner--text">Services</span>
-                                        <i className={cx(`ni ni-bold-down d-lg-none mr-3 float-right arrow-up ${rotateArrow ? 'rotate' : 'rotate-down'}`)} />
-                   
-                                    </DropdownToggle>
-                                    <DropdownMenu className="dropdown-menu-services dropdown-menu-custom">
-                                        <div className="dropdown-menu-inner">
-                                            <HashLink to="/what-we-do/#mutual-distribution" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdPieChart />
-                                                    </div>
-                                                    <Media body className="ml-3 headerLeft-sm">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom" style={{ textTransform: 'unset' }}>
-                                                            Mutual Fund Distribution
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </HashLink>
-                                            <HashLink to="/what-we-do/#retirement-planning" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdAccessibility />
-                                                    </div>
-                                                    <Media body className="ml-3 headerLeft-sm">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom" style={{ textTransform: 'unset' }}>
-                                                            Retirement Planning
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </HashLink>
-                                            <HashLink to="/what-we-do/#invest" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdTrendingUp />
-                                                    </div>
-                                                    <Media body className="ml-3">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom" style={{ textTransform: 'unset' }}>
-                                                            Investment Management
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </HashLink>
-                                            <HashLink to="/what-we-do/#educational" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdBook />
-                                                    </div>
-                                                    <Media body className="ml-3">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom" style={{ textTransform: 'unset' }}>
-                                                            Educational Planning
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </HashLink>
-                                            <HashLink to="/what-we-do/#financial" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdAccountBalance />
-                                                    </div>
-                                                    <Media body className="ml-3">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom" style={{ textTransform: 'unset' }}>
-                                                            Financial Advisory
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </HashLink>
-                                            <HashLink to="/what-we-do/#wealth" style={{ color: 'inherit' }}>
-                                                <Media
-                                                    className="d-flex align-items-center mb-0"
-                                                >
-                                                    <div className="icon icon-shape text-primary-color">
-                                                        <MdAssessment />
-                                                    </div>
-                                                    <Media body className="ml-3">
-                                                        <h6 className="heading text-primary-color mb-md-1 font-weight-custom" style={{ textTransform: 'unset' }}>
-                                                            Wealth Management
-                                                        </h6>
-                                                    </Media>
-                                                </Media>
-                                            </HashLink>
                                         </div>
                                     </DropdownMenu>
                                 </UncontrolledDropdown> */}
                             </Nav>
-                            {/* <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                                <NavItem>
-                                    <NavLink href="/what-we-do" className="navlink-header">
-                                        <i className="ni ni-building d-lg-none mr-3" />
-                                        <span className="nav-link-inner--text">Services</span>
-                                    </NavLink>
-                                </NavItem>
-                            </Nav> */}
                             <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                                 <NavItem>
                                     <NavLink href="/what-we-do" className="navlink-header">
@@ -731,7 +384,7 @@ export default function Header() {
                                 </NavItem>
                             </Nav>
 
-                            <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                            {/* <Nav className="align-items-lg-center ml-lg-auto" navbar>
                                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                                     <NavItem>
                                         <NavLink href="https://affinity.nvestmo.com/home" style={{ textTransform: 'none' }} className="navlink-header">
@@ -751,7 +404,7 @@ export default function Header() {
                                         </span>
                                     </Button>
                                 </NavItem>
-                            </Nav>
+                            </Nav> */}
                         </UncontrolledCollapse>
                     </Container>
                     <Container fluid className="d-lg-none justify-content-end">
