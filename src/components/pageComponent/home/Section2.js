@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import { Container, Row, Col, Badge, Card, CardImg, CardBody, Button } from 'reactstrap'
 // image
-import img1 from '../../../../static/img/theme/promo-1.png'
-import img2 from '../../../../static/img/theme/img-1-1200x1000.jpg'
+import img1 from '../../../../static/img/theme/section1.png'
+import img2 from '../../../../static/img/theme/img-2-1200x1000.jpg'
 import img3 from '../../../../static/img/ill/ill-2.svg'
 import profile1 from '../../../../static/img/theme/team-1-800x800.jpg'
 import profile2 from '../../../../static/img/theme/team-2-800x800.jpg'
@@ -24,14 +24,12 @@ export default function Section2() {
                     </Col>
                     <Col className="order-md-1" md="6">
                     <div className="pr-md-5">
-                        <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                        <i className="ni ni-settings-gear-65" />
+                        <div className="icon icon-lg icon-shape bg-primary-brand shadow rounded-circle mb-5">
+                          <i className="ni ni-settings-gear-65 text-white" />
                         </div>
-                        <h3>Awesome features</h3>
+                        <h3 className="text-primary-color">Lorem Ipsum</h3>
                         <p>
-                        The kit comes with three pre-built pages to help you get
-                        started faster. You can change the text and images and
-                        you're good to go.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
                         <ul className="list-unstyled mt-5">
                         <li className="py-2">
@@ -39,14 +37,14 @@ export default function Section2() {
                             <div>
                                 <Badge
                                 className="badge-circle mr-3"
-                                color="success"
+                                color="primary"
                                 >
-                                <i className="ni ni-settings-gear-65" />
+                                <i className="ni ni-settings-gear-65 text-white" />
                                 </Badge>
                             </div>
                             <div>
                                 <h6 className="mb-0">
-                                Carefully crafted components
+                                What is Lorem Ipsum?
                                 </h6>
                             </div>
                             </div>
@@ -56,13 +54,13 @@ export default function Section2() {
                             <div>
                                 <Badge
                                 className="badge-circle mr-3"
-                                color="success"
+                                color="primary"
                                 >
-                                <i className="ni ni-html5" />
+                                <i className="ni ni-check-bold text-white" />
                                 </Badge>
                             </div>
                             <div>
-                                <h6 className="mb-0">Amazing page examples</h6>
+                                <h6 className="mb-0">Why do we use it?</h6>
                             </div>
                             </div>
                         </li>
@@ -71,14 +69,14 @@ export default function Section2() {
                             <div>
                                 <Badge
                                 className="badge-circle mr-3"
-                                color="success"
+                                color="primary"
                                 >
-                                <i className="ni ni-satisfied" />
+                                <i className="ni ni-satisfied text-white" />
                                 </Badge>
                             </div>
                             <div>
                                 <h6 className="mb-0">
-                                Super friendly support team
+                                Where does it come from?
                                 </h6>
                             </div>
                             </div>
@@ -118,43 +116,35 @@ export default function Section2() {
                         />
                       </svg>
                       <h4 className="display-3 font-weight-bold text-white">
-                        Design System
+                        Lorem Ipsum
                       </h4>
                       <p className="lead text-italic text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever happens.
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                       </p>
                     </blockquote>
                   </Card>
                 </Col>
                 <Col md="6">
                   <div className="pl-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
-                      <i className="ni ni-settings" />
+                    <div className="icon icon-lg icon-shape bg-secondary-color shadow rounded-circle mb-5">
+                      <i className="ni ni-settings text-white" />
                     </div>
                     <h3>Our customers</h3>
                     <p className="lead">
-                      Don't let your uses guess by attaching tooltips and
-                      popoves to any element. Just make sure you enable them
-                      first via JavaScript.
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
                     <a
-                      className="font-weight-bold text-warning mt-5"
+                      className="font-weight-bold text-brand-secondary mt-5"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      A beautiful UI Kit for impactful websites
+                      Where can I get some?
                     </a>
                   </div>
                 </Col>

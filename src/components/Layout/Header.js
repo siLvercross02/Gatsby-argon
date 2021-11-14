@@ -22,8 +22,8 @@ import {
     //   UncontrolledTooltip
 } from "reactstrap";
 // Image
-import LogoImg from '../../../static/img/brand/argon-react.png';
-import LogoImgSM from '../../../static/img/brand/argon-react.png';
+import LogoImg from '../../../static/img/brand/Corlife-ver-new.png';
+import LogoImgSM from '../../../static/img/brand/Corlife-ver-new.png';
 
 // Icons
 import {

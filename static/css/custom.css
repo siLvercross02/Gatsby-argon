@@ -20,7 +20,11 @@ dl {
 
 /* bg */
 .bg-primary-brand {
-  background: #0076e4 !important;
+  background: #263a81 !important;
+}
+
+.bg-secondary-color {
+  background: #dc2827 !important;
 }
 
 .bg-affinity-gradient {
@@ -49,11 +53,11 @@ dl {
 
 /* text */
 .text-primary-color {
-  color: #062d97 !important;
+  color: #263a81 !important;
 }
 
 .text-brand-secondary {
-  color: #ff8e00;
+  color: #dc2827;
 }
 
 .text-affinity-blue {
@@ -61,7 +65,7 @@ dl {
 }
 
 .text-orange-affinity {
-  color: #fc760d !important;
+  color: #dc2827 !important;
 }
 
 .text-gray-secondary {
