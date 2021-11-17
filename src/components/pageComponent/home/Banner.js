@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
+import { Carousel } from 'antd';
 import Lottie from 'react-lottie';
 import { GatsbyImage, getImage,  } from "gatsby-plugin-image";
 import BannerJSON from '../../json/banner.json';
@@ -10,7 +11,7 @@ const query = graphql`
     {
         file(relativePath: {eq: "Corlife-ver-new.png"}) {
             childImageSharp {
-                gatsbyImageData(width: 400)
+                gatsbyImageData(width: 500)
             }
         }
     }
@@ -24,31 +25,71 @@ export default function Banner() {
         <Fragment>
           <div className="position-relative">
             {/* Hero for FREE version */}
-            <section className="section section-hero section-shaped">
+            <section className="section section-lg section-hero section-shaped" style={{ overflow: 'visible'}}>
               {/* Background circles */}
-              <div className="shape shape-style-2 bg-affinity-gradient">
-                {/* <span className="span-150" />
-                <span className="span-50" />
-                <span className="span-50" />
-                <span className="span-75" />
-                <span className="span-100" />
-                <span className="span-75" />
-                <span className="span-50" />
-                <span className="span-100" />
-                <span className="span-50" />
-                <span className="span-100" /> */}
+              <div className="shape bg-primary z-reset">
+                <Carousel
+                  effect="scrollx"
+                  autoplay={true}
+                  cssEase="ease"
+                  arrows={false}
+                  speed="2000"
+                  infinite={true}
+                  pauseOnHover={false}
+                  dotPosition="bottom"
+                >
+                  <div className="slide-1">
+                    <Container fluid className="padding-fluid">
+                      <Row className="mt-lg">
+                        <Col md={12} lg={12} xl={12}>
+                          <h1 className="text-white mt-lg text-center">Test 1</h1>
+                        </Col>
+                      </Row>
+                     
+                    </Container>
+                  </div>
+                  <div className="slide-2">
+                    <Container>
+                      <Row className="mt-lg">
+                        <Col md={12} lg={12} xl={12}>
+                          <h1 className="text-white mt-lg text-center">Test 2</h1>
+                        </Col>
+                      </Row>
+                     
+                    </Container>
+                  </div>
+                  <div className="slide-3">
+                    <Container>
+                      <Row className="mt-lg">
+                        <Col md={12} lg={12} xl={12}>
+                          <h1 className="text-white mt-lg text-center">Test 3</h1>
+                        </Col>
+                      </Row>
+                     
+                    </Container>
+                  </div>
+                  <div className="slide-4">
+                    <Container>
+                      <Row className="mt-lg">
+                        <Col md={12} lg={12} xl={12}>
+                          <h1 className="text-white mt-lg text-center">Test 4</h1>
+                        </Col>
+                      </Row>
+                     
+                    </Container>
+                  </div>
+                </Carousel>
               </div>
-              <Container className="shape-container d-flex align-items-center py-lg">
+              {/* <Container className="shape-container d-flex align-items-center py-lg">
                 <div className="col px-0">
                   <Row>
                     <Col lg="6" md="6">
                       <GatsbyImage
                         className="img-fluid"
                         image={imageSrc}
-                        style={{ width: "400px" }}
-                        className="mt-5"
+                        style={{ width: "500px" }}
+                        className="mt-3]"
                       />
-                      {/* <h1 className="text-white">CORLIFE</h1> */}
                       <p className="lead text-primary-color">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                       </p>
@@ -65,12 +106,6 @@ export default function Banner() {
                           </span>
                         </Button>{" "}
                       </div>
-                      {/* <div className="mt-5">
-                        <small className="text-white font-weight-bold mb-0 mr-2">
-                          *proudly coded by
-                        </small>
-                
-                      </div> */}
                     </Col>
                     <Col lg="6" md="6">
                       <Lottie 
@@ -85,23 +120,7 @@ export default function Banner() {
                     </Col>
                   </Row>
                 </div>
-              </Container>
-              {/* SVG separator */}
-              {/* <div className="separator separator-bottom separator-skew zindex-100">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                  version="1.1"
-                  viewBox="0 0 2560 100"
-                  x="0"
-                  y="0"
-                >
-                  <polygon
-                    className="fill-white"
-                    points="2560 0 2560 100 0 100"
-                  />
-                </svg>
-              </div> */}
+              </Container> */}
             </section>
           </div>
         </Fragment>

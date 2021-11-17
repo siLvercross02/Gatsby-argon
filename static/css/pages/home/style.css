@@ -1,0 +1,48 @@
+.z-reset {
+  z-index: 0 !important;
+}
+
+.padding-fluid {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.slide-1 {
+  background-image: url("../../../img/banner/banner-1.jpg") !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: cover !important;
+  object-fit: contain !important;
+}
+
+.slide-2 {
+  background-image: url("../../../img/banner/banner-2.jpg") !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: cover !important;
+  object-fit: contain !important;
+}
+
+.slide-3 {
+  background-image: url("../../../img/banner/banner-3.jpg") !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: cover !important;
+  object-fit: contain !important;
+}
+
+.slide-4 {
+  background-image: url("../../../img/banner/banner-4.jpg") !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: cover !important;
+  object-fit: contain !important;
+}

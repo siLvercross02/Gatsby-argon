@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
 
 /* Custom CSS */
+@import "pages/home/style.css";
 
 html,
 body {
@@ -161,9 +162,10 @@ footer {
 
 .head-fix .navbar-nav .nav-link {
   font-family: "Poppins" !important;
-  font-size: 13px !important;
-  color: rgba(0, 32, 96) !important;
-  font-weight: 500;
+  font-size: 15px !important;
+  color: #253b82 !important;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .navbar-affinity .navbar-nav {

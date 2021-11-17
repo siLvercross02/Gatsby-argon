@@ -15,6 +15,7 @@
     "compile-sass": "node-sass static/css/argon-design-system-react.scss static/css/argon-design-system-react.css"
   },
   "dependencies": {
+    "antd": "^4.16.13",
     "bootstrap": "^4.6.1",
     "bulma": "^0.9.3",
     "classnames": "^2.3.1",

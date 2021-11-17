@@ -377,6 +377,22 @@ export default function Header() {
                             </Nav>
                             <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                                 <NavItem>
+                                    <NavLink href="/what-we-do" className="navlink-header">
+                                        <i className="ni ni-single-02 d-lg-none mr-3" />
+                                        <span className="nav-link-inner--text">Corlife 2.0</span>
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                            <Nav className="navbar-nav-hover align-items-lg-center" navbar>
+                                <NavItem>
+                                    <NavLink href="/what-we-do" className="navlink-header">
+                                        <i className="ni ni-single-02 d-lg-none mr-3" />
+                                        <span className="nav-link-inner--text">Careers</span>
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                            <Nav className="navbar-nav-hover align-items-lg-center" navbar>
+                                <NavItem>
                                     <NavLink href="/contact-us" className="navlink-header">
                                         <i className="ni ni-email-83 d-lg-none mr-3" />
                                         <span className="nav-link-inner--text">Contact Us</span>
