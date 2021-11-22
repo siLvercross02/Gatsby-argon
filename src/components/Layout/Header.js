@@ -130,7 +130,7 @@ export default function Header() {
                             </div>
                             <Nav className="navbar-nav-hover align-items-lg-center ml-lg-auto" navbar>
                                 <NavItem>
-                                    <NavLink href="/home" className="navlink-header">
+                                    <NavLink href="/" className="navlink-header">
                                         <i className="ni ni-app d-lg-none mr-3" />
                                         <span className="nav-link-inner--text">Home</span>
                                     </NavLink>
@@ -140,14 +140,14 @@ export default function Header() {
                                 {/* About us */}
                                 <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav onClick={rotate} className="navlink-header">
-                                        {/* <HashLink
+                                        <Link
                                             to="/about"
                                             style={{ color: 'inherit'}}
-                                        > */}
-                                        <i className="ni ni-building d-lg-none mr-3" />
-                                        <span className="nav-link-inner--text">About Us</span>
-                                        <i className={cx(`ni ni-bold-down d-lg-none mr-3 float-right arrow-up ${rotateArrow ? 'rotate' : 'rotate-down'}`)} />
-                                        {/* </HashLink> */}
+                                        >
+                                            <i className="ni ni-building d-lg-none mr-3" />
+                                            <span className="nav-link-inner--text">About Us</span>
+                                            <i className={cx(`ni ni-bold-down d-lg-none mr-3 float-right arrow-up ${rotateArrow ? 'rotate' : 'rotate-down'}`)} />
+                                        </Link>
                                     </DropdownToggle>
                                     {/* <DropdownMenu className="dropdown-menu-affinity dropdown-menu-custom">
                                         <div className="dropdown-menu-inner">

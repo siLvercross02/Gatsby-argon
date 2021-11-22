@@ -5,6 +5,7 @@
 
 /* Custom CSS */
 @import "pages/home/style.css";
+@import "pages/about/style.css";
 
 html,
 body {
@@ -652,7 +653,7 @@ footer {
   height: 2px;
   content: "";
   position: absolute;
-  background-color: #ee8e18;
+  background-color: #dc2827;
 }
 
 .navlink-header::before {

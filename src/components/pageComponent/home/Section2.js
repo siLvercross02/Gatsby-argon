@@ -15,7 +15,7 @@ export default function Section2() {
         <Fragment>
             <section className="section--corlife section mt-lg">
                 <Container fluid className="p-5">
-                  <Row className="row-grid bg-primary-brand p-5 rounded">
+                  <Row className="row-grid bg-affinity-gradient p-5 rounded">
                       <Col className="order-md-2" md="5">
                         <div className="img-pos">
                           <img
@@ -27,16 +27,16 @@ export default function Section2() {
                       </Col>
                       <Col className="order-md-1" md="7">
                         <div className="pr-md-1">
-                            <div className="icon icon-lg icon-shape bg-white shadow rounded-circle mb-5">
+                            <div className="icon icon-lg icon-shape bg-primary-brand text-white shadow rounded-circle mb-5">
                               <i className="ni ni-collection" />
                             </div>
-                            <h3 className="text-white">Message from the Co-Founders</h3>
-                            <p className="message--text text-white pb-3">
+                            <h3 className="text-primary-color">Message from the Co-Founders</h3>
+                            <p className="message--text text-primary-color pb-3 text-justify">
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </p>
 
-                            <p className="mb-0 text-white">John Doe</p>
-                            <p className="text-secondary" style={{ fontSize: '14px'}}>President & CEO, Corlife</p>
+                            <p className="mb-0 text-primary-color">John Doe</p>
+                            <p className="text-gray" style={{ fontSize: '14px'}}>President & CEO, Corlife</p>
                         </div>
                       </Col>
                   </Row>
