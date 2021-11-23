@@ -369,7 +369,7 @@ export default function Header() {
                             </Nav>
                             <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                                 <NavItem>
-                                    <NavLink href="/what-we-do" className="navlink-header">
+                                    <NavLink href="/services" className="navlink-header">
                                         <i className="ni ni-single-02 d-lg-none mr-3" />
                                         <span className="nav-link-inner--text">Services</span>
                                     </NavLink>
