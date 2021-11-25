@@ -6,6 +6,7 @@
 /* Custom CSS */
 @import "pages/home/style.css";
 @import "pages/about/style.css";
+@import "pages/services/style.css";
 
 html,
 body {
