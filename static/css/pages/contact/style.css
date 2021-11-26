@@ -1,0 +1,9 @@
+.contact-banner {
+  background-image: url("../../../img/banner/contact-us.png") !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: cover !important;
+  object-fit: contain !important;
+}
