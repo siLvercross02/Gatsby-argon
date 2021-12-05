@@ -9,7 +9,7 @@ import BannerJSON from '../../json/banner.json';
 
 const query = graphql`
     {
-        file(relativePath: {eq: "Corlife-ver-new.png"}) {
+        file(relativePath: {eq: "corlife-white.png"}) {
             childImageSharp {
                 gatsbyImageData(width: 500)
             }
@@ -23,14 +23,14 @@ export default function Banner() {
     console.log(useStaticQuery(query));
     return (
         <Fragment>
-          <div className="position-relative">
+          <div className="position-relative bg-overlay">
             {/* Hero for FREE version */}
             <section className="section section-lg section-hero section-shaped" style={{ overflow: 'visible'}}>
               {/* Background circles */}
               <div className="shape bg-primary z-reset">
                 <Carousel
                   effect="scrollx"
-                  autoplay={true}
+                  autoplay={false}
                   cssEase="ease"
                   arrows={false}
                   speed="2000"
@@ -39,30 +39,49 @@ export default function Banner() {
                   dotPosition="bottom"
                 >
                   <div className="slide-1">
-                    <Container fluid className="padding-fluid">
-                      <Row className="mt-lg">
-                        <Col md={12} lg={12} xl={12}>
-                          <h1 className="text-white mt-lg text-center">Test 1</h1>
-                        </Col>
-                      </Row>
-                     
-                    </Container>
-                  </div>
-                  <div className="slide-2">
                     <Container>
                       <Row className="mt-lg">
-                        <Col md={12} lg={12} xl={12}>
-                          <h1 className="text-white mt-lg text-center">Test 2</h1>
+                        <Col md={6} lg={6} xl={6} xs={12} className="mt-lg">
+                          {/* <h1 className="text-white mt-lg">Test 1</h1> */}
+                          <GatsbyImage
+                            className="img-fluid"
+                            image={imageSrc}
+                            style={{ width: "500px" }}
+                            className="mt-3]"
+                          />
+                          <p className="lead text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          </p>
+                          <Button
+                            className="btn-icon mb-3 mb-sm-0 mt-3"
+                            color="primary"
+                            size="lg"
+                          >
+                            Get Started
+                          </Button>
+                        </Col>
+                      </Row>
+                    </Container>
+                  </div>
+                  {/* <div className="slide-2">
+                    <Container>
+                      <Row className="mt-lg">
+                        <Col md={6} lg={6} xl={6} xs={12}>
+                          <h1 className="text-white mt-lg text-left">Financial Solutions to Advance your Business</h1>
                         </Col>
                       </Row>
                      
                     </Container>
-                  </div>
+                  </div> */}
                   <div className="slide-3">
                     <Container>
                       <Row className="mt-lg">
-                        <Col md={12} lg={12} xl={12}>
-                          <h1 className="text-white mt-lg text-center">Test 3</h1>
+                        <Col md={6} lg={6} xl={6} xs={12}>
+                          <h1 className="text-white mt-lg"><h1 className="text-white mt-lg text-left">Financial Solutions to Advance your Business</h1></h1>
+                          <p className="lead text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          </p>
                         </Col>
                       </Row>
                      
@@ -71,8 +90,12 @@ export default function Banner() {
                   <div className="slide-4">
                     <Container>
                       <Row className="mt-lg">
-                        <Col md={12} lg={12} xl={12}>
-                          <h1 className="text-white mt-lg text-center">Test 4</h1>
+                        <Col md={6} lg={6} xl={6} xs={12}>
+                          <h1 className="text-white mt-lg">Start your life with us</h1>
+                          <p className="lead text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          </p>
                         </Col>
                       </Row>
                      

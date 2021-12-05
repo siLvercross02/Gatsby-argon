@@ -53,7 +53,7 @@ export default function Banner() {
                                                 </Col>
                                                 <Col lg="6" md="6">
                                                     <Form.Item>
-                                                        <Input placeholder="Your Last" />
+                                                        <Input placeholder="Your Last Name" />
                                                     </Form.Item>
                                                 </Col>
                                             </Row>
